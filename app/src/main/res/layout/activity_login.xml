@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#009688"
-    tools:context=".SignUp">
+    tools:context=".LoginActivity">
 
     <EditText
-        android:id="@+id/edtTxtEmailSignUp"
-        android:layout_width="0dp"
+        android:id="@+id/edtTxtEmailLogin"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:ems="10"
@@ -22,21 +22,8 @@
         app:layout_constraintTop_toBottomOf="@+id/imageButton6" />
 
     <EditText
-        android:id="@+id/edtTxtUserNameSignUp"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Please enter your user name ..."
-        android:inputType="textPersonName"
-        android:textColorHint="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtTxtEmailSignUp" />
-
-    <EditText
-        android:id="@+id/edtTxtPasswordSignUp"
-        android:layout_width="0dp"
+        android:id="@+id/edtTxtPasswordLogin"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:ems="10"
@@ -45,42 +32,43 @@
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtTxtUserNameSignUp" />
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtEmailLogin" />
 
     <Button
-        android:id="@+id/btnSignUp"
-        android:layout_width="0dp"
+        android:id="@+id/btnActivityLoginSignUp"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:background="#4CAF50"
         android:text="Sign Up"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtTxtPasswordSignUp" />
+        app:layout_constraintTop_toBottomOf="@+id/btnActivityLogIn" />
 
     <Button
-        android:id="@+id/btnLogIn"
+        android:id="@+id/btnActivityLogIn"
         android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="32dp"
         android:background="#3F51B5"
         android:text="Log In"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtPasswordLogin" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="0dp"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
         android:gravity="center"
         android:text="Welcome to my SocialNetwork"
         android:textColor="#3F51B5"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -91,7 +79,6 @@
         android:layout_height="82dp"
         android:layout_marginTop="64dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/androidicon" />
