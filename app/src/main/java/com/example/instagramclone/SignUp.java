@@ -87,6 +87,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
                         @Override
                         public void done(ParseException e) {
                             if(e == null){
+
                                 FancyToast.makeText(SignUp.this, appUser.getUsername() + " is signed up",
                                         FancyToast.LENGTH_LONG, FancyToast.SUCCESS, false).show();
                                 transitionToSocialMediaActivity();

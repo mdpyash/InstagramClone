@@ -75,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtLoadingData"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -94,7 +94,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/txtLoadingData"
         app:srcCompat="@drawable/androidicon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
